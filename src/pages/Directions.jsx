@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-// 1. 이미지 임포트 (src/assets에 있는 map.png를 직접 가져옵니다)
+// 1. 이미지 임포트 (경로: src/assets/map.png)
 import mapImg from '../assets/map.png';
 
 const Directions = () => {
@@ -123,7 +123,7 @@ const Directions = () => {
       <h1 style={styles.title}>{t('directions.title')}</h1>
 
       <div style={styles.mapContainer}>
-        {/* 2. 기존 "/map.png" 대신 위에서 임포트한 변수 mapImg를 사용합니다 */}
+        {/* 2. 핵심 수정: 변수 mapImg를 src에 넣었습니다 */}
         <img src={mapImg} alt={t('directions.mapAlt')} style={styles.mapImage} />
       </div>
 
