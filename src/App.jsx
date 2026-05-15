@@ -13,15 +13,13 @@ function App() {
   const { t, i18n } = useTranslation();
 
   // 현재 언어에 맞춰 html 태그의 lang 속성을 동기화 (CSS 폰트 변수 트리거 용도)
-  React.useEffect(() => { 
-    document.documentElement.lang = i18n.language;
-  }, [i18n.language]);
-
   React.useEffect(() => {
+    document.documentElement.lang = i18n.language;
     const link = document.querySelector("link[rel~='icon']");
-    if (link) {// 대문자 PNG라면 logo.PNG로, 소문자 png라면 logo.png로 꼭 맞춰주세요!
-      link.href = logoImg;}
-  }, []);
+    if (link) {
+      link.href = logoImg;
+    }
+  }, [i18n.language]); // 언어가 바뀔 때마다 실행되거나, 빈 배열[]로 두어도 됩니다.
 
   const styles = {
     container: {
@@ -43,7 +41,7 @@ function App() {
   };
 
   return (
-      <BrowserRouter basename="/public">
+    <BrowserRouter>
       <div style={styles.container}>
         <Navbar />
         <Routes>
