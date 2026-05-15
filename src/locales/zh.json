@@ -1,0 +1,211 @@
+{
+  "dashboard": {
+    "openTime": "今日开放: 10:00 - 18:00 (KST)",
+    "tomorrowTime": "明日 10:00 开放 (KST)",
+    "badgeOpen": "● 开放中",
+    "badgeClosed": "● 闭馆",
+    "ariaOpen": "当前状态: 开放中",
+    "ariaClosed": "当前状态: 闭馆",
+    "liveUpdates": " | 实时更新: 所有展厅均可参观"
+  },
+  "hero": {
+    "title": "韩国国立中央博物馆",
+    "subtitle": "通过世界级展览和数字档案，体验5000年的韩国历史。",
+    "searchAria": "搜索博物馆藏品",
+    "searchPlaceholder": "搜索藏品 (例如: 半跏思惟像, 高丽青瓷)...",
+    "resultsFound": "找到 {{count}} 个结果。",
+    "resultsLabel": "搜索结果"
+  },
+  "treasures": {
+    "pensiveBodhisattva": {
+      "name": "半跏思惟像",
+      "category": "佛教雕塑",
+      "room": "思惟之室"
+    },
+    "goryeoCeladon": {
+      "name": "高丽青瓷",
+      "category": "陶瓷",
+      "room": "青瓷室"
+    },
+    "tenStoryPagoda": {
+      "name": "敬天寺十层石塔",
+      "category": "佛教艺术",
+      "room": "历史之路 (大厅)"
+    }
+  },
+  "exhibitions": {
+    "sectionTitle": "特色展览",
+    "pensive": {
+      "title": "半跏思惟像",
+      "tag": "思惟之室",
+      "desc": "散发着深沉的平静与精神深度的佛教雕塑杰作。"
+    },
+    "celadon": {
+      "title": "高丽青瓷",
+      "tag": "永恒之蓝",
+      "desc": "探索高丽陶瓷优雅的曲线和神秘的翡翠色。"
+    },
+    "digital": {
+      "title": "数字沉浸式体验馆",
+      "tag": "特别活动",
+      "desc": "历史与未来技术的相遇。一次穿越时空的全景数字之旅。"
+    },
+    "statusOpen": "● 开放中",
+    "statusClosed": "● 维护中 (闭馆)",
+    "ariaStatus": "当前状态: ",
+    "btnBook": "预约参观",
+    "btnMaintenance": "维护中",
+    "ariaBook": "预约参观 {{title}}",
+    "ariaMaintenance": "{{title}} 目前因维护而关闭"
+  },
+  "booking": {
+    "backHome": "← 返回首页",
+    "title": "博物馆参观预约",
+    "step1": {
+      "label": "日期和时间",
+      "title": "1. 选择日期和时间段",
+      "aria": "第1步: 选择日期和时间",
+      "alert": "请选择日期和时间段。",
+      "btnNext": "下一步: 访客信息 →"
+    },
+    "step2": {
+      "label": "访客信息",
+      "title": "2. 访客信息",
+      "aria": "第2步: 访客信息",
+      "alert": "请填写您的姓名和电子邮件。",
+      "btnBack": "← 返回",
+      "btnNext": "确认预约"
+    },
+    "step3": {
+      "label": "预约确认",
+      "aria": "第3步: 预约确认"
+    },
+    "progressAria": "预约进度",
+    "calendar": {
+      "title": "2026年 5月",
+      "aria": "2026年 5月日历",
+      "days": ["日", "一", "二", "三", "四", "五", "六"],
+      "ariaClosed": "5月{{day}}日，博物馆周一闭馆",
+      "ariaOpen": "5月{{day}}日",
+      "tooltipClosed": "周一闭馆"
+    },
+    "time": {
+      "title": "可选时间段",
+      "aria": "选择时间段",
+      "full": "(已满)",
+      "ariaFull": "{{time}} 已约满",
+      "ariaSelect": "选择 {{time}}"
+    },
+    "form": {
+      "name": "姓名",
+      "namePlaceholder": "例: 张三",
+      "email": "电子邮件地址 (用于接收QR门票)",
+      "emailPlaceholder": "zhangsan@example.com",
+      "visitors": "参观人数",
+      "v1": "1人",
+      "v2": "2人",
+      "v3": "3人",
+      "v4": "4人或以上 (团体)",
+      "exhibit": "选择的展览",
+      "defaultExhibit": "普通参观"
+    },
+    "confirm": {
+      "title": "预约已确认!",
+      "ticketSent": "您的门票已发送至: ",
+      "qrAria": "您的二维码门票",
+      "qrCode": "[ 二维码 ]",
+      "date": "2026年 5月{{day}}日 | {{time}}",
+      "exhibit": "展览: {{name}}",
+      "entrance": "入口: 主大门 G1",
+      "btnHome": "返回首页"
+    }
+  },
+  "quickInfo": {
+    "hoursTitle": "🕒 参观时间",
+    "hoursText": "周一, 周二, 周四, 周五, 周日: 10:00 - 18:00 / 周三, 周六: 10:00 - 21:00",
+    "feeTitle": "🎟️ 门票",
+    "feeText": "免费 (特别企划展除外)",
+    "btnDirections": "交通指南",
+    "btnBooking": "预约参观",
+    "alertDirections": "正在前往交通指南页面。"
+  },
+  "notice": {
+    "sectionTitle": "📢 公告事项",
+    "tabs": {
+      "notice": "通知",
+      "announcement": "公示/公告",
+      "recruit": "招聘信息",
+      "press": "新闻稿"
+    },
+    "items": {
+      "notice": [
+        { "title": "国立中央博物馆主页服务系统优化工作通知", "date": "2026.05.12" },
+        { "title": "2026年青年实习生（体验型）录用公告", "date": "2026.05.10" },
+        { "title": "因展厅环境改善部分展厅闭馆通知", "date": "2026.05.08" },
+        { "title": "常设展览馆2层捐赠馆重新开馆通知", "date": "2026.05.01" },
+        { "title": "智能手机展览指南APP服务使用须知", "date": "2026.04.28" }
+      ],
+      "announcement": [
+        { "title": "2026年度博物馆周边景观管理服务招标公告", "date": "2026.05.09" },
+        { "title": "展览运营物品采购协议采购指南公告", "date": "2026.05.05" }
+      ],
+      "recruit": [
+        { "title": "2026年公务职员工招聘最终录用公告", "date": "2026.05.11" }
+      ],
+      "press": [
+        { "title": "[新闻稿] 国立中央博物馆公开全新互动展览", "date": "2026.05.13" }
+      ]
+    },
+    "bannerTitle": "智能手机展览指南APP服务",
+    "bannerSubtitle": "App Store™ / Google Play™\n免费下载",
+    "bannerBtn": "了解更多"
+  },
+  "nav": {
+    "logo": "韩国国立中央博物馆",
+    "menu": {
+      "visit": "参观信息",
+      "exhibitions": "展览",
+      "education": "教育/活动",
+      "collections": "藏品",
+      "about": "博物馆介绍"
+    }
+  },
+  "directions": {
+    "title": "交通指南",
+    "mapAlt": "韩国国立中央博物馆 交通地图",
+    "tabSubway": "🚇 地铁",
+    "tabBus": "🚌 公交",
+    "subway": {
+      "mainTitle": "主要路线",
+      "line4": "4号线",
+      "line4Desc1": "二村站2号出口方向 '博物馆小路' ⇔ 博物馆西门",
+      "line4Desc2": "二村站2号出口 ⇔ 博物馆西门",
+      "gyeongui": "京义中央线",
+      "gyeonguiDesc1": "(汶山-龙门) 二村站2号出口方向 '博物馆小路' ⇔ 博物馆西门",
+      "noteElevator": "※ 电梯使用指南：位于二村站1号出口、二村站2号出口方向 '博物馆小路'",
+      "notePath": "博物馆小路使用指南：(国立中央博物馆 二村站地下通道)",
+      "transferTitle": "其他换乘路线",
+      "line3": "3号线",
+      "line3Desc": "玉水站下车 → 换乘京义中央线 → 二村站下车",
+      "line6": "6号线",
+      "line6Desc": "三角地站换乘 → 二村站下车",
+      "line7": "7号线",
+      "line7Desc": "总神大入口(梨水)站换乘 → 二村站下车",
+      "line9": "9号线",
+      "line9Desc": "铜雀站换乘 → 二村站下车",
+      "line1": "1号线",
+      "line1Desc": "龙山站下车 → 换乘京义中央线 → 二村站下车"
+    },
+    "bus": {
+      "mainTitle": "干线公交",
+      "busType": "干线公交",
+      "bus400": "400路",
+      "bus400Desc": "西冰库洞 - 西冰库站1号出口 - 国立中央博物馆、龙山家族公园 - 二村站 - 龙山税务署 - 龙山工业高中",
+      "bus502": "502路",
+      "bus502Desc": "梨水桥 - 西冰库站 - 国立中央博物馆、龙山家族公园 - 二村站 - 龙山税务署 - 龙山工业高中"
+    }
+  },
+  "footer": {
+    "text": "© 2026 韩国国立中央博物馆. 为全球访客设计的零误差原则门户网站."
+  }
+}

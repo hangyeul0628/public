@@ -1,0 +1,211 @@
+{
+  "dashboard": {
+    "openTime": "本日の開館: 10:00 - 18:00 (KST)",
+    "tomorrowTime": "明日 10:00 開館 (KST)",
+    "badgeOpen": "● 開館中",
+    "badgeClosed": "● 閉館",
+    "ariaOpen": "現在の状態: 開館中",
+    "ariaClosed": "現在の状態: 閉館",
+    "liveUpdates": " | リアルタイム更新: すべての展示室が見学可能です"
+  },
+  "hero": {
+    "title": "国立中央博物館",
+    "subtitle": "世界クラスの展示とデジタルアーカイブで、5000年の韓国の歴史を体験してください。",
+    "searchAria": "博物館の収蔵品を検索",
+    "searchPlaceholder": "文化財を検索する (例: 半跏思惟像, 高麗青磁)...",
+    "resultsFound": "{{count}}件の結果が見つかりました。",
+    "resultsLabel": "検索結果"
+  },
+  "treasures": {
+    "pensiveBodhisattva": {
+      "name": "半跏思惟像",
+      "category": "仏教彫刻",
+      "room": "思惟の部屋"
+    },
+    "goryeoCeladon": {
+      "name": "高麗青磁",
+      "category": "陶磁器",
+      "room": "青磁室"
+    },
+    "tenStoryPagoda": {
+      "name": "敬天寺十層石塔",
+      "category": "仏教美術",
+      "room": "歴史の道 (ロビー)"
+    }
+  },
+  "exhibitions": {
+    "sectionTitle": "注目の展示",
+    "pensive": {
+      "title": "半跏思惟像",
+      "tag": "思惟の部屋",
+      "desc": "深い平和と精神的な深さを放つ、仏教彫刻の最高傑作です。"
+    },
+    "celadon": {
+      "title": "高麗青磁",
+      "tag": "永遠の青",
+      "desc": "高麗陶磁器特有の優雅な曲線と神秘的な翡翠色をご覧ください。"
+    },
+    "digital": {
+      "title": "デジタル体験館",
+      "tag": "特別イベント",
+      "desc": "歴史と未来技術の出会い。時空を超えるパノラマデジタルジャーニー。"
+    },
+    "statusOpen": "● 開館中",
+    "statusClosed": "● メンテナンス中 (閉館)",
+    "ariaStatus": "現在の状態: ",
+    "btnBook": "見学を予約する",
+    "btnMaintenance": "メンテナンス中",
+    "ariaBook": "{{title}} の見学を予約する",
+    "ariaMaintenance": "{{title}} は現在メンテナンスのため閉館しています"
+  },
+  "booking": {
+    "backHome": "← ホームに戻る",
+    "title": "博物館見学予約",
+    "step1": {
+      "label": "日時",
+      "title": "1. 日時の選択",
+      "aria": "ステップ1: 日時の選択",
+      "alert": "日付と時間の両方を選択してください。",
+      "btnNext": "次へ: 訪問者情報 →"
+    },
+    "step2": {
+      "label": "訪問者情報",
+      "title": "2. 訪問者情報",
+      "aria": "ステップ2: 訪問者情報",
+      "alert": "名前とメールアドレスの両方を入力してください。",
+      "btnBack": "← 戻る",
+      "btnNext": "予約を確定する"
+    },
+    "step3": {
+      "label": "予約確認",
+      "aria": "ステップ3: 予約確認"
+    },
+    "progressAria": "予約の進捗",
+    "calendar": {
+      "title": "2026年 5月",
+      "aria": "2026年 5月のカレンダー",
+      "days": ["日", "月", "火", "水", "木", "金", "土"],
+      "ariaClosed": "5月{{day}}日、毎週月曜日は休館日です",
+      "ariaOpen": "5月{{day}}日",
+      "tooltipClosed": "毎週月曜日は休館"
+    },
+    "time": {
+      "title": "予約可能な時間",
+      "aria": "時間帯を選択",
+      "full": "(満員)",
+      "ariaFull": "{{time}} は満員です",
+      "ariaSelect": "{{time}} を選択"
+    },
+    "form": {
+      "name": "氏名",
+      "namePlaceholder": "例: 山田 太郎",
+      "email": "メールアドレス (QRチケット送信用)",
+      "emailPlaceholder": "yamada@example.com",
+      "visitors": "訪問人数",
+      "v1": "1名",
+      "v2": "2名",
+      "v3": "3名",
+      "v4": "4名以上 (団体)",
+      "exhibit": "選択された展示",
+      "defaultExhibit": "一般観覧"
+    },
+    "confirm": {
+      "title": "予約が確定しました！",
+      "ticketSent": "チケットが次のメールアドレスに送信されました: ",
+      "qrAria": "QRコードチケット",
+      "qrCode": "[ QRコード ]",
+      "date": "2026年 5月{{day}}日 | {{time}}",
+      "exhibit": "展示: {{name}}",
+      "entrance": "入口: メインゲート G1",
+      "btnHome": "ホームに戻る"
+    }
+  },
+  "quickInfo": {
+    "hoursTitle": "🕒 開館時間",
+    "hoursText": "月, 火, 木, 金, 日: 10:00 - 18:00 / 水, 土: 10:00 - 21:00",
+    "feeTitle": "🎟️ 観覧料",
+    "feeText": "無料 (特別展を除く)",
+    "btnDirections": "アクセス",
+    "btnBooking": "予約する",
+    "alertDirections": "アクセスページに移動します。"
+  },
+  "notice": {
+    "sectionTitle": "📢 お知らせ",
+    "tabs": {
+      "notice": "お知らせ",
+      "announcement": "公示/公告",
+      "recruit": "採用情報",
+      "press": "プレスリリース"
+    },
+    "items": {
+      "notice": [
+        { "title": "国立中央博物館ホームページ サービスシステム改善作業のご案内", "date": "2026.05.12" },
+        { "title": "2026年 青年インターン(体験型)合格者公告", "date": "2026.05.10" },
+        { "title": "展示室環境改善に伴う一部展示室の休室のご案内", "date": "2026.05.08" },
+        { "title": "常設展示館2階 寄贈館 再開館のご案内", "date": "2026.05.01" },
+        { "title": "スマートフォン展示案内アプリサービス利用のご案内", "date": "2026.04.28" }
+      ],
+      "announcement": [
+        { "title": "2026年度 博物館周辺造園管理業務 入札公告", "date": "2026.05.09" },
+        { "title": "展示運営物品購入 随意契約案内公告", "date": "2026.05.05" }
+      ],
+      "recruit": [
+        { "title": "2026年 公務職労働者採用 最終合格者公告", "date": "2026.05.11" }
+      ],
+      "press": [
+        { "title": "[プレスリリース] 国立中央博物館、新しいインタラクティブ展示を公開", "date": "2026.05.13" }
+      ]
+    },
+    "bannerTitle": "スマートフォン展示案内アプリ",
+    "bannerSubtitle": "App Store™ / Google Play™\n無料ダウンロード可能",
+    "bannerBtn": "詳細を見る"
+  },
+  "nav": {
+    "logo": "国立中央博物館",
+    "menu": {
+      "visit": "観覧情報",
+      "exhibitions": "展示",
+      "education": "教育/イベント",
+      "collections": "所蔵品",
+      "about": "博物館紹介"
+    }
+  },
+  "directions": {
+    "title": "アクセス",
+    "mapAlt": "国立中央博物館 アクセスマップ",
+    "tabSubway": "🚇 地下鉄",
+    "tabBus": "🚌 バス",
+    "subway": {
+      "mainTitle": "主要路線",
+      "line4": "4号線",
+      "line4Desc1": "二村(イチョン)駅2番出口方向「博物館の道」 ⇔ 博物館西門",
+      "line4Desc2": "二村駅2番出口 ⇔ 博物館西門",
+      "gyeongui": "京義中央",
+      "gyeonguiDesc1": "(文山-龍門) 二村駅2番出口方向「博物館の道」 ⇔ 博物館西門",
+      "noteElevator": "※ エレベーター利用案内：二村駅1番出口、二村駅2番出口方向「博物館の道」に位置",
+      "notePath": "博物館の道 利用案内：(国立中央博物館 二村駅地下道)",
+      "transferTitle": "その他乗り換え路線",
+      "line3": "3号線",
+      "line3Desc": "玉水(オクス)駅下車 → 京義中央線乗り換え → 二村駅下車",
+      "line6": "6号線",
+      "line6Desc": "三角地(サムガクチ)駅乗り換え → 二村駅下車",
+      "line7": "7号線",
+      "line7Desc": "総神大入口(イス)駅乗り換え → 二村駅下車",
+      "line9": "9号線",
+      "line9Desc": "銅雀(トンジャク)駅乗り換え → 二村駅下車",
+      "line1": "1号線",
+      "line1Desc": "龍山(ヨンサン)駅下車 → 京義中央線乗り換え → 二村駅下車"
+    },
+    "bus": {
+      "mainTitle": "幹線バス",
+      "busType": "幹線バス",
+      "bus400": "400番",
+      "bus400Desc": "西氷庫(ソビンゴ)洞 - 西氷庫駅1番出口 - 国立中央博物館、龍山家族公園 - 二村駅 - 龍山税務署 - 龍山工業高校",
+      "bus502": "502番",
+      "bus502Desc": "イス橋 - 西氷庫駅 - 国立中央博物館、龍山家族公園 - 二村駅 - 龍山税務署 - 龍山工業高校"
+    }
+  },
+  "footer": {
+    "text": "© 2026 国立中央博物館. グローバル訪問者のためのゼロエラー原則に基づくポータル."
+  }
+}

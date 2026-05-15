@@ -1,0 +1,211 @@
+{
+  "dashboard": {
+    "openTime": "Today: 10:00 - 18:00 (KST)",
+    "tomorrowTime": "Opens at 10:00 Tomorrow (KST)",
+    "badgeOpen": "● OPEN",
+    "badgeClosed": "● CLOSED",
+    "ariaOpen": "Current Status: Open",
+    "ariaClosed": "Current Status: Closed",
+    "liveUpdates": " | Live Updates: All galleries are currently accessible."
+  },
+  "hero": {
+    "title": "National Museum of Korea",
+    "subtitle": "Experience 5,000 years of history through world-class exhibitions and digital archives.",
+    "searchAria": "Search museum treasures",
+    "searchPlaceholder": "Search treasures (e.g., Pensive Bodhisattva)...",
+    "resultsFound": "{{count}} results found.",
+    "resultsLabel": "Search Results"
+  },
+  "treasures": {
+    "pensiveBodhisattva": {
+      "name": "Pensive Bodhisattva",
+      "category": "Buddhist Sculpture",
+      "room": "Room of Quiet Contemplation"
+    },
+    "goryeoCeladon": {
+      "name": "Goryeo Celadon",
+      "category": "Ceramics",
+      "room": "Celadon Gallery"
+    },
+    "tenStoryPagoda": {
+      "name": "Ten-story Pagoda",
+      "category": "Buddhist Art",
+      "room": "Museum Lobby"
+    }
+  },
+  "exhibitions": {
+    "sectionTitle": "Featured Exhibitions",
+    "pensive": {
+      "title": "Pensive Bodhisattva",
+      "tag": "Room of Quiet Contemplation",
+      "desc": "A masterpiece of Buddhist sculpture, radiating a sense of deep peace and spiritual depth."
+    },
+    "celadon": {
+      "title": "Goryeo Celadon",
+      "tag": "Eternal Blue",
+      "desc": "Discover the elegant curves and mysterious jade-green color of Goryeo pottery."
+    },
+    "digital": {
+      "title": "Digital Immersive Hall",
+      "tag": "Special Event",
+      "desc": "History meets future technology. A panoramic digital journey through time."
+    },
+    "statusOpen": "● Live: Open",
+    "statusClosed": "● Closed for Maintenance",
+    "ariaStatus": "Current Status: ",
+    "btnBook": "Book Visit",
+    "btnMaintenance": "Maintenance",
+    "ariaBook": "Book a visit for {{title}}",
+    "ariaMaintenance": "{{title}} is currently closed for maintenance"
+  },
+  "booking": {
+    "backHome": "← Back to Home",
+    "title": "Museum Visit Reservation",
+    "step1": {
+      "label": "Date & Time",
+      "title": "1. Select Date & Time Slot",
+      "aria": "Step 1: Select Date and Time",
+      "alert": "Please select both a date and time slot.",
+      "btnNext": "Next: Guest Info →"
+    },
+    "step2": {
+      "label": "Information",
+      "title": "2. Guest Information",
+      "aria": "Step 2: Guest Information",
+      "alert": "Please fill out your name and email.",
+      "btnBack": "← Back",
+      "btnNext": "Book Visit Now"
+    },
+    "step3": {
+      "label": "Confirmation",
+      "aria": "Step 3: Confirmation"
+    },
+    "progressAria": "Booking Progress",
+    "calendar": {
+      "title": "May 2026",
+      "aria": "May 2026 Calendar",
+      "days": ["S", "M", "T", "W", "T", "F", "S"],
+      "ariaClosed": "May {{day}}, Museum Closed on Mondays",
+      "ariaOpen": "May {{day}}",
+      "tooltipClosed": "Museum Closed on Mondays"
+    },
+    "time": {
+      "title": "Available Slots",
+      "aria": "Select a time slot",
+      "full": "(Full)",
+      "ariaFull": "{{time}} is fully booked",
+      "ariaSelect": "Select {{time}}"
+    },
+    "form": {
+      "name": "Full Name",
+      "namePlaceholder": "e.g. Michael Doe",
+      "email": "Email Address (For QR Ticket)",
+      "emailPlaceholder": "michael@example.com",
+      "visitors": "Number of Visitors",
+      "v1": "1 Person",
+      "v2": "2 People",
+      "v3": "3 People",
+      "v4": "4+ People (Group)",
+      "exhibit": "Selected Exhibit",
+      "defaultExhibit": "General Admission"
+    },
+    "confirm": {
+      "title": "Reservation Confirmed!",
+      "ticketSent": "Your ticket has been sent to ",
+      "qrAria": "Your QR Code Ticket",
+      "qrCode": "[ QR CODE ]",
+      "date": "May {{day}}, 2026 | {{time}}",
+      "exhibit": "Exhibit: {{name}}",
+      "entrance": "Entrance: Main Gate G1",
+      "btnHome": "Return to Home"
+    }
+  },
+  "quickInfo": {
+    "hoursTitle": "🕒 Hours",
+    "hoursText": "Mon, Tue, Thu, Fri, Sun: 10:00 - 18:00 / Wed, Sat: 10:00 - 21:00",
+    "feeTitle": "🎟️ Admission",
+    "feeText": "Free (except special exhibitions)",
+    "btnDirections": "Directions",
+    "btnBooking": "Book a Visit",
+    "alertDirections": "Navigating to Directions Page."
+  },
+  "notice": {
+    "sectionTitle": "📢 Notice",
+    "tabs": {
+      "notice": "Notice",
+      "announcement": "Announcement",
+      "recruit": "Recruitment",
+      "press": "Press Release"
+    },
+    "items": {
+      "notice": [
+        { "title": "National Museum Website System Improvement Guide", "date": "2026.05.12" },
+        { "title": "2026 Youth Internship Successful Candidates", "date": "2026.05.10" },
+        { "title": "Temporary Closure of Some Galleries for Environment Improvement", "date": "2026.05.08" },
+        { "title": "Reopening of the Donation Gallery on the 2nd Floor", "date": "2026.05.01" },
+        { "title": "Guide to the Smartphone Exhibition Guide App Service", "date": "2026.04.28" }
+      ],
+      "announcement": [
+        { "title": "2026 Museum Landscape Maintenance Bidding", "date": "2026.05.09" },
+        { "title": "Exhibition Supplies Purchase Private Contract Notice", "date": "2026.05.05" }
+      ],
+      "recruit": [
+        { "title": "2026 Public Worker Final Candidates", "date": "2026.05.11" }
+      ],
+      "press": [
+        { "title": "[Press] NMK Unveils New Interactive Exhibition", "date": "2026.05.13" }
+      ]
+    },
+    "bannerTitle": "Smartphone Guide App",
+    "bannerSubtitle": "App Store™ / Google Play™\nAvailable for Free",
+    "bannerBtn": "Learn More"
+  },
+  "nav": {
+    "logo": "NATIONAL MUSEUM OF KOREA",
+    "menu": {
+      "visit": "Visit",
+      "exhibitions": "Exhibitions",
+      "education": "Education / Events",
+      "collections": "Collections",
+      "about": "About"
+    }
+  },
+  "directions": {
+    "title": "Directions",
+    "mapAlt": "National Museum of Korea Map",
+    "tabSubway": "🚇 Subway",
+    "tabBus": "🚌 Bus",
+    "subway": {
+      "mainTitle": "Main Routes",
+      "line4": "Line 4",
+      "line4Desc1": "Ichon Station Exit 2 (Museum Path) ⇔ Museum West Gate",
+      "line4Desc2": "Ichon Station Exit 2 ⇔ Museum West Gate",
+      "gyeongui": "Gyeongui-Jungang",
+      "gyeonguiDesc1": "(Munsan-Yongmun) Ichon Station Exit 2 (Museum Path) ⇔ Museum West Gate",
+      "noteElevator": "※ Elevator: Located at Ichon Station Exit 1, and towards Exit 2 (Museum Path)",
+      "notePath": "Museum Path Info: (NMK Ichon Station Underground Pass)",
+      "transferTitle": "Transfer Routes",
+      "line3": "Line 3",
+      "line3Desc": "Get off at Oksu Station → Transfer to Gyeongui-Jungang → Get off at Ichon Station",
+      "line6": "Line 6",
+      "line6Desc": "Transfer at Samgakji Station → Get off at Ichon Station",
+      "line7": "Line 7",
+      "line7Desc": "Transfer at Chongshin Univ. (Isu) Station → Get off at Ichon Station",
+      "line9": "Line 9",
+      "line9Desc": "Transfer at Dongjak Station → Get off at Ichon Station",
+      "line1": "Line 1",
+      "line1Desc": "Get off at Yongsan Station → Transfer to Gyeongui-Jungang → Get off at Ichon Station"
+    },
+    "bus": {
+      "mainTitle": "Trunk Buses",
+      "busType": "Trunk Bus",
+      "bus400": "400",
+      "bus400Desc": "Seobinggo-dong - Seobinggo Stn Exit 1 - NMK, Yongsan Family Park - Ichon Stn - Yongsan Tax Office - Yongsan Tech High",
+      "bus502": "502",
+      "bus502Desc": "Isu Bridge - Seobinggo Stn - NMK, Yongsan Family Park - Ichon Stn - Yongsan Tax Office - Yongsan Tech High"
+    }
+  },
+  "footer": {
+    "text": "© 2026 National Museum of Korea. Designed for Global Visitors with Zero-Error Principles."
+  }
+}

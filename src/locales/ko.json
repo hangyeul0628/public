@@ -1,0 +1,211 @@
+{
+  "dashboard": {
+    "openTime": "오늘 개관: 10:00 - 18:00 (KST)",
+    "tomorrowTime": "내일 10:00 개관 (KST)",
+    "badgeOpen": "● 개관 중",
+    "badgeClosed": "● 휴관 중",
+    "ariaOpen": "현재 상태: 개관 중",
+    "ariaClosed": "현재 상태: 휴관 중",
+    "liveUpdates": " | 실시간 현황: 모든 전시실 관람 가능"
+  },
+  "hero": {
+    "title": "국립중앙박물관",
+    "subtitle": "세계적인 전시와 디지털 아카이브를 통해 5,000년의 한국 역사를 경험해보세요.",
+    "searchAria": "박물관 소장품 검색",
+    "searchPlaceholder": "문화재를 검색하세요 (예: 반가사유상, 고려청자)...",
+    "resultsFound": "{{count}}개의 검색 결과를 찾았습니다.",
+    "resultsLabel": "검색 결과"
+  },
+  "treasures": {
+    "pensiveBodhisattva": {
+      "name": "반가사유상",
+      "category": "불교 조각",
+      "room": "사유의 방"
+    },
+    "goryeoCeladon": {
+      "name": "고려청자",
+      "category": "도자",
+      "room": "청자실"
+    },
+    "tenStoryPagoda": {
+      "name": "경천사지 십층석탑",
+      "category": "불교 미술",
+      "room": "역사의 길 (로비)"
+    }
+  },
+  "exhibitions": {
+    "sectionTitle": "주요 전시",
+    "pensive": {
+      "title": "반가사유상",
+      "tag": "사유의 방",
+      "desc": "깊은 평화와 영적인 깊이를 발산하는 불교 조각의 최고 걸작입니다."
+    },
+    "celadon": {
+      "title": "고려청자",
+      "tag": "영원한 푸른빛",
+      "desc": "고려 도자기 특유의 우아한 곡선과 신비로운 비색을 감상해 보세요."
+    },
+    "digital": {
+      "title": "디지털 실감 영상관",
+      "tag": "특별 체험",
+      "desc": "역사와 미래 기술의 만남. 시간을 넘나드는 파노라마 디지털 여정을 떠나보세요."
+    },
+    "statusOpen": "● 개관 중",
+    "statusClosed": "● 유지보수 중 (휴관)",
+    "ariaStatus": "현재 상태: ",
+    "btnBook": "방문 예약하기",
+    "btnMaintenance": "유지보수 중",
+    "ariaBook": "{{title}} 방문 예약하기",
+    "ariaMaintenance": "{{title}} 전시는 현재 유지보수로 휴관 중입니다"
+  },
+  "booking": {
+    "backHome": "← 홈으로 돌아가기",
+    "title": "박물관 방문 예약",
+    "step1": {
+      "label": "날짜 및 시간",
+      "title": "1. 날짜 및 시간 선택",
+      "aria": "1단계: 날짜 및 시간 선택",
+      "alert": "날짜와 시간을 모두 선택해 주세요.",
+      "btnNext": "다음: 방문자 정보 →"
+    },
+    "step2": {
+      "label": "방문자 정보",
+      "title": "2. 방문자 정보",
+      "aria": "2단계: 방문자 정보",
+      "alert": "이름과 이메일을 모두 입력해 주세요.",
+      "btnBack": "← 이전",
+      "btnNext": "예약 확정하기"
+    },
+    "step3": {
+      "label": "예약 확정",
+      "aria": "3단계: 예약 확정"
+    },
+    "progressAria": "예약 진행 상태",
+    "calendar": {
+      "title": "2026년 5월",
+      "aria": "2026년 5월 달력",
+      "days": ["일", "월", "화", "수", "목", "금", "토"],
+      "ariaClosed": "5월 {{day}}일, 매주 월요일은 휴관입니다",
+      "ariaOpen": "5월 {{day}}일",
+      "tooltipClosed": "매주 월요일 휴관"
+    },
+    "time": {
+      "title": "예약 가능 시간",
+      "aria": "시간 선택",
+      "full": "(마감)",
+      "ariaFull": "{{time}} 마감됨",
+      "ariaSelect": "{{time}} 선택"
+    },
+    "form": {
+      "name": "이름",
+      "namePlaceholder": "예: 홍길동",
+      "email": "이메일 주소 (QR 티켓 발송용)",
+      "emailPlaceholder": "hong@example.com",
+      "visitors": "방문 인원",
+      "v1": "1명",
+      "v2": "2명",
+      "v3": "3명",
+      "v4": "4명 이상 (단체)",
+      "exhibit": "선택된 전시",
+      "defaultExhibit": "일반 관람"
+    },
+    "confirm": {
+      "title": "예약이 확정되었습니다!",
+      "ticketSent": "입장권이 다음 이메일로 발송되었습니다: ",
+      "qrAria": "QR 코드 티켓",
+      "qrCode": "[ QR 코드 ]",
+      "date": "2026년 5월 {{day}}일 | {{time}}",
+      "exhibit": "전시: {{name}}",
+      "entrance": "입구: 주 출입구 G1",
+      "btnHome": "홈으로 돌아가기"
+    }
+  },
+  "quickInfo": {
+    "hoursTitle": "🕒 관람시간",
+    "hoursText": "월, 화, 목, 금, 일: 10:00 - 18:00 / 수, 토: 10:00 - 21:00",
+    "feeTitle": "🎟️ 관람료",
+    "feeText": "무료 (특별기획전 제외)",
+    "btnDirections": "오시는길",
+    "btnBooking": "예약하기",
+    "alertDirections": "오시는 길 안내 페이지로 이동합니다."
+  },
+  "notice": {
+    "sectionTitle": "📢 알립니다",
+    "tabs": {
+      "notice": "알림",
+      "announcement": "공시/공고",
+      "recruit": "채용안내",
+      "press": "보도자료"
+    },
+    "items": {
+      "notice": [
+        { "title": "국립중앙박물관 홈페이지 서비스 시스템 개선 작업 안내", "date": "2026.05.12" },
+        { "title": "2026년 청년인턴(체험형) 합격자 공고", "date": "2026.05.10" },
+        { "title": "전시실 환경 개선에 따른 일부 전시실 휴실 안내", "date": "2026.05.08" },
+        { "title": "상설전시관 2층 기증관 재개관 안내", "date": "2026.05.01" },
+        { "title": "스마트폰 전시안내 앱 서비스 이용 안내", "date": "2026.04.28" }
+      ],
+      "announcement": [
+        { "title": "2026년도 박물관 주변 조경 관리 용역 입찰 공고", "date": "2026.05.09" },
+        { "title": "전시 운영 물품 구매 수의계약 안내공고", "date": "2026.05.05" }
+      ],
+      "recruit": [
+        { "title": "2026년 공무직 근로자 채용 최종 합격자 공고", "date": "2026.05.11" }
+      ],
+      "press": [
+        { "title": "[보도자료] 국립중앙박물관, 새로운 인터랙티브 전시 공개", "date": "2026.05.13" }
+      ]
+    },
+    "bannerTitle": "스마트폰 전시안내 앱 서비스",
+    "bannerSubtitle": "App Store™ / Google Play™<br/>무료 다운로드 가능",
+    "bannerBtn": "자세히 보기"
+  },
+  "nav": {
+    "logo": "국립중앙박물관",
+    "menu": {
+      "visit": "관람정보",
+      "exhibitions": "전시",
+      "education": "교육/행사",
+      "collections": "소장품",
+      "about": "박물관소개"
+    }
+  },
+  "directions": {
+    "title": "오시는 길",
+    "mapAlt": "국립중앙박물관 오시는 길 지도",
+    "tabSubway": "🚇 지하철",
+    "tabBus": "🚌 버스",
+    "subway": {
+      "mainTitle": "주요 노선",
+      "line4": "4호선",
+      "line4Desc1": "이촌역 2번출구 방향 '박물관 나들길' ⇔ 박물관 서문",
+      "line4Desc2": "이촌역 2번출구 ⇔ 박물관 서문",
+      "gyeongui": "경의중앙",
+      "gyeonguiDesc1": "(문산-용문) 이촌역 2번출구 방향 '박물관 나들길' ⇔ 박물관 서문",
+      "noteElevator": "※ 엘리베이터 이용안내: 이촌역 1번출구, 이촌역 2번출구 방향 '박물관 나들길' 에 위치",
+      "notePath": "박물관 나들길 이용안내: (국립중앙박물관 이촌역 지하보도)",
+      "transferTitle": "기타 환승 노선",
+      "line3": "3호선",
+      "line3Desc": "옥수역 하차 → 경의중앙선 환승 → 이촌역 하차",
+      "line6": "6호선",
+      "line6Desc": "삼각지역 환승 → 이촌역 하차",
+      "line7": "7호선",
+      "line7Desc": "총신대입구(이수)역 환승 → 이촌역 하차",
+      "line9": "9호선",
+      "line9Desc": "동작역 환승 → 이촌역 하차",
+      "line1": "1호선",
+      "line1Desc": "용산역 하차 → 경의중앙선 환승 → 이촌역 하차"
+    },
+    "bus": {
+      "mainTitle": "간선버스",
+      "busType": "간선버스",
+      "bus400": "400번",
+      "bus400Desc": "서빙고동 - 서빙고역 1번출구 - 국립중앙박물관, 용산가족공원 - 이촌역 - 용산세무서 - 용산공고",
+      "bus502": "502번",
+      "bus502Desc": "이수교 - 서빙고역 - 국립중앙박물관, 용산가족공원 - 이촌역 - 용산세무서 - 용산공고"
+    }
+  },
+  "footer": {
+    "text": "© 2026 국립중앙박물관. 무결점 원칙(Zero-Error) 기반 글로벌 방문객 포털."
+  }
+}
