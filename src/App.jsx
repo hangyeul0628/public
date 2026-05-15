@@ -7,23 +7,12 @@ import Directions from './pages/Directions';
 import LanguageSwitcher from './components/LanguageSwitcher';
 import Navbar from './components/Navbar';
 
-// ★ 경로 확인: src/assets/logo.PNG 가 맞는지 꼭 확인하세요!
-// import logoImg from './assets/logo.PNG'; 
 
-function App() 
+function App() {
   const { t, i18n } = useTranslation();
 
   React.useEffect(() => {
-    // 1. 언어 설정
     document.documentElement.lang = i18n.language;
-    
-    // 2. 파비콘 설정 (가장 안전한 절대 경로 방식)
-    const link = document.querySelector("link[rel~='icon']");
-    if (link) {
-      // 깃허브 배포 주소인 /public/ 을 앞에 붙여줍니다.
-      // 파일명이 PNG인지 png인지 꼭 확인해서 하나로 맞추세요!
-      link.href = "/public/logo.png"; 
-    }
   }, [i18n.language]);
 
   const styles = {
@@ -48,5 +37,5 @@ function App()
       </div>
     </BrowserRouter>
   );
-
+}
 export default App;
