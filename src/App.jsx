@@ -7,40 +7,30 @@ import Directions from './pages/Directions';
 import LanguageSwitcher from './components/LanguageSwitcher';
 import Navbar from './components/Navbar';
 
-import logoImg from './assets/logo.PNG';
+// ★ 경로 확인: src/assets/logo.PNG 가 맞는지 꼭 확인하세요!
+import logoImg from './assets/logo.PNG'; 
 
 function App() {
   const { t, i18n } = useTranslation();
 
-  // 현재 언어에 맞춰 html 태그의 lang 속성을 동기화 (CSS 폰트 변수 트리거 용도)
   React.useEffect(() => {
+    // 1. 언어 설정
     document.documentElement.lang = i18n.language;
+    
+    // 2. 파비콘 설정 (에러 방지를 위해 옵셔널 체이닝 사용)
     const link = document.querySelector("link[rel~='icon']");
-    if (link) {
+    if (link && logoImg) {
       link.href = logoImg;
     }
-  }, [i18n.language]); // 언어가 바뀔 때마다 실행되거나, 빈 배열[]로 두어도 됩니다.
+  }, [i18n.language]);
 
   const styles = {
-    container: {
-      minHeight: '100vh',
-      display: 'flex',
-      flexDirection: 'column',
-      position: 'relative',
-    },
-    footer: {
-      padding: '40px 10%',
-      borderTop: '1px solid var(--color-glass-border)',
-      textAlign: 'center',
-      color: 'var(--color-text-body)',
-      fontSize: 'max(0.875rem, 12px)',
-      marginTop: 'auto',
-      wordBreak: 'keep-all',
-      lineHeight: '1.5',
-    }
+    container: { minHeight: '100vh', display: 'flex', flexDirection: 'column', position: 'relative' },
+    footer: { padding: '40px 10%', borderTop: '1px solid var(--color-glass-border)', textAlign: 'center', color: 'var(--color-text-body)', fontSize: 'max(0.875rem, 12px)', marginTop: 'auto', wordBreak: 'keep-all', lineHeight: '1.5' }
   };
 
   return (
+    // ★ basename을 다시 넣었습니다. 이게 없으면 깃허브에서 첫 화면이 안 뜹니다.
     <BrowserRouter basename="/public">
       <div style={styles.container}>
         <Navbar />
