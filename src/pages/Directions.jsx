@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
+// 1. 이미지 임포트 (src/assets에 있는 map.png를 직접 가져옵니다)
+import mapImg from '../assets/map.png';
+
 const Directions = () => {
   const { t } = useTranslation();
   const [activeTab, setActiveTab] = useState('subway');
@@ -120,7 +123,8 @@ const Directions = () => {
       <h1 style={styles.title}>{t('directions.title')}</h1>
 
       <div style={styles.mapContainer}>
-        <img src="/map.png" alt={t('directions.mapAlt')} style={styles.mapImage} />
+        {/* 2. 기존 "/map.png" 대신 위에서 임포트한 변수 mapImg를 사용합니다 */}
+        <img src={mapImg} alt={t('directions.mapAlt')} style={styles.mapImage} />
       </div>
 
       <div style={styles.tabContainer}>
@@ -157,7 +161,7 @@ const Directions = () => {
             {t('directions.subway.notePath')}
           </div>
 
-          <h3 style={styles.subTitle} style={{...styles.subTitle, marginTop: '40px'}}>{t('directions.subway.transferTitle')}</h3>
+          <h3 style={{...styles.subTitle, marginTop: '40px'}}>{t('directions.subway.transferTitle')}</h3>
           <ul style={styles.list}>
             <li style={styles.listItem}>
               <span style={{...styles.badge, background: lineColors['3호선']}}>{t('directions.subway.line3')}</span>
