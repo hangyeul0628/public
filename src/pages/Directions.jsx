@@ -241,8 +241,10 @@ const Directions = () => {
 
 
       <div style={styles.mapContainer}>
-  <img src={mapImg} alt={t('directions.mapAlt')} style={styles.mapImage} />
-</div>
+
+        <img src={mapImg} alt={t('directions.mapAlt')} style={styles.mapImage} />
+
+      </div>
 
 
 
