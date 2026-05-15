@@ -17,7 +17,6 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // 전시 메뉴: 홈이면 바로 스크롤, 다른 페이지면 홈으로 이동 후 스크롤
   const handleExhibitionsClick = (e) => {
     e.preventDefault();
     if (location.pathname === '/') {
@@ -27,7 +26,6 @@ const Navbar = () => {
       }
     } else {
       navigate('/');
-      // 페이지 이동 후 스크롤 (약간의 딜레이 필요)
       setTimeout(() => {
         const el = document.getElementById('exhibitions');
         if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -35,7 +33,6 @@ const Navbar = () => {
     }
   };
 
-  // 일반 메뉴: 홈(/)으로 이동
   const handleMenuClick = (e) => {
     e.preventDefault();
     navigate('/');
@@ -53,23 +50,29 @@ const Navbar = () => {
       alignItems: 'center',
       justifyContent: 'space-between',
       padding: '0 5%',
-      background: scrolled ? 'rgba(2, 12, 27, 0.85)' : 'transparent',
-      backdropFilter: scrolled ? 'blur(12px)' : 'none',
+      background: scrolled ? 'rgba(2, 12, 27, 0.95)' : 'rgba(2, 12, 27, 0.4)',
+      backdropFilter: 'blur(12px)',
       borderBottom: scrolled ? '1px solid rgba(255, 255, 255, 0.1)' : '1px solid transparent',
       transition: 'all 0.3s ease',
       zIndex: 1000,
     },
-    logo: {
-      fontSize: '1.5rem',
-      fontWeight: '700',
-      color: '#ffffff',
+    logoContainer: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: '12px',
       textDecoration: 'none',
-      letterSpacing: '1px',
+    },
+    logoImg: {
+      height: '45px', // 로고 높이 조절
+      width: 'auto',
+      objectFit: 'contain',
+      filter: 'brightness(1.2)', // 이미지 선명도 조절
     },
     menu: {
       display: 'flex',
       gap: '2rem',
       listStyle: 'none',
+      alignItems: 'center',
     },
     menuItem: {
       color: '#E6F1FF',
@@ -86,13 +89,10 @@ const Navbar = () => {
     rightSection: {
       display: 'flex',
       alignItems: 'center',
-      gap: '20px',
+      gap: '30px',
     }
   };
 
-  // key별 동작 정의
-  // - exhibitions: 주요전시 스크롤
-  // - 나머지(visit, education, collections, about): 홈으로 이동
   const menus = [
     { key: 'visit',       action: handleMenuClick },
     { key: 'exhibitions', action: handleExhibitionsClick },
@@ -103,7 +103,10 @@ const Navbar = () => {
 
   return (
     <nav style={styles.nav}>
-      <Link to="/" style={styles.logo} className="nav-logo">{t('nav.logo')}</Link>
+      <Link to="/" style={styles.logoContainer} className="nav-logo">
+        <img src="/logo.png" alt="국립중앙박물관 로고" style={styles.logoImg} />
+      </Link>
+      
       <div style={styles.rightSection} className="nav-right">
         <ul style={styles.menu} className="nav-menu">
           {menus.map((m, i) => (
@@ -117,13 +120,11 @@ const Navbar = () => {
               </button>
             </li>
           ))}
-          {/* 예약하기 */}
           <li>
             <Link to="/booking" style={styles.menuItem} className="nav-link">
               {t('quickInfo.btnBooking')}
             </Link>
           </li>
-          {/* 오시는 길 */}
           <li>
             <Link to="/directions" style={styles.menuItem} className="nav-link">
               {t('quickInfo.btnDirections')}
@@ -132,22 +133,19 @@ const Navbar = () => {
         </ul>
         <LanguageSwitcher />
       </div>
+
       <style>{`
         .nav-link:hover {
           color: var(--color-accent) !important;
         }
+        @media (max-width: 1200px) {
+          .nav-menu {
+            gap: 1.2rem !important;
+          }
+        }
         @media (max-width: 1024px) {
           .nav-menu {
             display: none !important;
-          }
-        }
-        @media (max-width: 768px) {
-          .nav-logo {
-            font-size: 1.1rem !important;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            max-width: 60%;
           }
         }
       `}</style>
