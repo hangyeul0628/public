@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import LanguageSwitcher from './LanguageSwitcher';
 
 const Navbar = () => {
   const { t } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,6 +16,31 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // 전시 메뉴: 홈이면 바로 스크롤, 다른 페이지면 홈으로 이동 후 스크롤
+  const handleExhibitionsClick = (e) => {
+    e.preventDefault();
+    if (location.pathname === '/') {
+      const el = document.getElementById('exhibitions');
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    } else {
+      navigate('/');
+      // 페이지 이동 후 스크롤 (약간의 딜레이 필요)
+      setTimeout(() => {
+        const el = document.getElementById('exhibitions');
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 300);
+    }
+  };
+
+  // 일반 메뉴: 홈(/)으로 이동
+  const handleMenuClick = (e) => {
+    e.preventDefault();
+    navigate('/');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   const styles = {
     nav: {
@@ -51,6 +78,10 @@ const Navbar = () => {
       textDecoration: 'none',
       transition: 'color 0.2s',
       cursor: 'pointer',
+      background: 'none',
+      border: 'none',
+      padding: 0,
+      fontFamily: 'inherit',
     },
     rightSection: {
       display: 'flex',
@@ -59,12 +90,15 @@ const Navbar = () => {
     }
   };
 
+  // key별 동작 정의
+  // - exhibitions: 주요전시 스크롤
+  // - 나머지(visit, education, collections, about): 홈으로 이동
   const menus = [
-    { key: 'visit' },
-    { key: 'exhibitions' },
-    { key: 'education' },
-    { key: 'collections' },
-    { key: 'about' }
+    { key: 'visit',       action: handleMenuClick },
+    { key: 'exhibitions', action: handleExhibitionsClick },
+    { key: 'education',   action: handleMenuClick },
+    { key: 'collections', action: handleMenuClick },
+    { key: 'about',       action: handleMenuClick },
   ];
 
   return (
@@ -74,9 +108,27 @@ const Navbar = () => {
         <ul style={styles.menu} className="nav-menu">
           {menus.map((m, i) => (
             <li key={i}>
-              <a style={styles.menuItem} className="nav-link" href="#">{t(`nav.menu.${m.key}`)}</a>
+              <button
+                style={styles.menuItem}
+                className="nav-link"
+                onClick={m.action}
+              >
+                {t(`nav.menu.${m.key}`)}
+              </button>
             </li>
           ))}
+          {/* 예약하기 */}
+          <li>
+            <Link to="/booking" style={styles.menuItem} className="nav-link">
+              {t('quickInfo.btnBooking')}
+            </Link>
+          </li>
+          {/* 오시는 길 */}
+          <li>
+            <Link to="/directions" style={styles.menuItem} className="nav-link">
+              {t('quickInfo.btnDirections')}
+            </Link>
+          </li>
         </ul>
         <LanguageSwitcher />
       </div>

@@ -83,12 +83,12 @@ const Confirmation = ({ data }) => {
         </p>
       </div>
 
-      <a 
-        href="/"
+      <Link
+        to="/"
         style={{...styles.btn, border: 'none', cursor: 'pointer', fontFamily: 'inherit', fontSize: '1rem', textDecoration: 'none', display: 'inline-block'}}
       >
         {t('booking.confirm.btnHome')}
-      </a>
+      </Link>
     </div>
   );
 };

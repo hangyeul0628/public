@@ -34,7 +34,7 @@ const Home = () => {
     <>
       <header><HeroSearch /></header>
       <QuickInfoBar />
-      <main style={styles.mainContent}>
+      <main id="exhibitions" style={styles.mainContent}>
         <h2 style={styles.sectionTitle}>{t('exhibitions.sectionTitle')}</h2>
         <div style={styles.grid}>
           {exhibitions.map((ex, i) => (
