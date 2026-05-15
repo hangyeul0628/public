@@ -33,27 +33,27 @@ const Home = () => {
     }
   };
 
-  const exhibitions = [
+const exhibitions = [
     {
       title: t('exhibitions.pensive.title'),
       tagText: t('exhibitions.pensive.tag'),
       description: t('exhibitions.pensive.desc'),
       isClosed: false,
-      imageUrl: 'pensive.jpg'
+      imageUrl: pensiveImg // 'pensive.jpg' 대신 따옴표 없는 변수명!
     },
     {
       title: t('exhibitions.celadon.title'),
       tagText: t('exhibitions.celadon.tag'),
       description: t('exhibitions.celadon.desc'),
       isClosed: false,
-      imageUrl: 'celadon.jpg'
+      imageUrl: celadonImg // 'celadon.jpg' 대신 따옴표 없는 변수명!
     },
     {
       title: t('exhibitions.digital.title'),
       tagText: t('exhibitions.digital.tag'),
       description: t('exhibitions.digital.desc'),
       isClosed: true,
-      imageUrl: 'digital.jpg'
+      imageUrl: digitalImg // 'digital.jpg' 대신 따옴표 없는 변수명!
     }
   ];
 
