@@ -7,13 +7,21 @@ import Directions from './pages/Directions';
 import LanguageSwitcher from './components/LanguageSwitcher';
 import Navbar from './components/Navbar';
 
+import logoImg from './assets/logo.PNG';
+
 function App() {
   const { t, i18n } = useTranslation();
 
   // 현재 언어에 맞춰 html 태그의 lang 속성을 동기화 (CSS 폰트 변수 트리거 용도)
-  React.useEffect(() => {
+  React.useEffect(() => { 
     document.documentElement.lang = i18n.language;
   }, [i18n.language]);
+
+  React.useEffect(() => {
+    const link = document.querySelector("link[rel~='icon']");
+    if (link) {// 대문자 PNG라면 logo.PNG로, 소문자 png라면 logo.png로 꼭 맞춰주세요!
+      link.href = logoImg;}
+  }, []);
 
   const styles = {
     container: {
