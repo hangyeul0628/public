@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { useTranslation } from 'react-i18next';
 
-import mapImg from '../assets/map.png';
+import mapImg from '../assets/map.PNG';
 
 const Directions = () => {
 
