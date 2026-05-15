@@ -8,10 +8,16 @@ import LanguageSwitcher from './components/LanguageSwitcher';
 import Navbar from './components/Navbar';
 
 // ★ 경로 확인: src/assets/logo.PNG 가 맞는지 꼭 확인하세요!
-import logoImg from './assets/logo.PNG'; 
+// import logoImg from './assets/logo.PNG'; 
 
 function App() {
-  const { t, i18n } = useTranslation();
+  document.documentElement.lang = i18n.language;
+  const link = document.querySelector("link[rel~='icon']");
+  if (link) {
+    // import logoImg 대신, 배포 환경에서 확실한 경로를 직접 입력
+    link.href = "/public/assets/logo.PNG"; 
+  }
+}, [i18n.language]);
 
   React.useEffect(() => {
     // 1. 언어 설정
