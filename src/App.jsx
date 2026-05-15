@@ -41,7 +41,7 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/public">
       <div style={styles.container}>
         <Navbar />
         <Routes>
