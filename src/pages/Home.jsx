@@ -39,21 +39,21 @@ const exhibitions = [
       tagText: t('exhibitions.pensive.tag'),
       description: t('exhibitions.pensive.desc'),
       isClosed: false,
-      imageUrl: '/pensive.jpg'
+      imageUrl: pensive.jpg
     },
     {
       title: t('exhibitions.celadon.title'),
       tagText: t('exhibitions.celadon.tag'),
       description: t('exhibitions.celadon.desc'),
       isClosed: false,
-      imageUrl: '/celadon.jpg'
+      imageUrl: celadon.jpg
     },
     {
       title: t('exhibitions.digital.title'),
       tagText: t('exhibitions.digital.tag'),
       description: t('exhibitions.digital.desc'),
       isClosed: true,
-      imageUrl: '/digital.jpg'
+      imageUrl: digital.jpg
     }
   ];
 
