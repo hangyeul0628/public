@@ -9,6 +9,9 @@ const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
+  // Vite의 base 경로를 가져옵니다. (/public/)
+  const baseUrl = import.meta.env.BASE_URL;
+
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
@@ -61,35 +64,42 @@ const Navbar = () => {
       alignItems: 'center',
       gap: '12px',
       textDecoration: 'none',
+      color: '#ffffff', // 텍스트 로고 색상
     },
     logoImg: {
-      height: '45px', // 로고 높이 조절
+      height: '32px', // 이미지 크기 최적화
       width: 'auto',
       objectFit: 'contain',
-      filter: 'brightness(1.2)', // 이미지 선명도 조절
+      filter: 'brightness(0) invert(1)', // 검은색 로고를 흰색으로 반전
+    },
+    logoText: {
+      fontSize: '1.25rem',
+      fontWeight: '700',
+      letterSpacing: '0.5px',
+      whiteSpace: 'nowrap',
     },
     menu: {
       display: 'flex',
-      gap: '2rem',
+      gap: '1.5rem',
       listStyle: 'none',
       alignItems: 'center',
     },
     menuItem: {
       color: '#E6F1FF',
-      fontSize: '1rem',
+      fontSize: '0.95rem',
       fontWeight: '500',
       textDecoration: 'none',
       transition: 'color 0.2s',
       cursor: 'pointer',
       background: 'none',
       border: 'none',
-      padding: 0,
+      padding: '8px 4px',
       fontFamily: 'inherit',
     },
     rightSection: {
       display: 'flex',
       alignItems: 'center',
-      gap: '30px',
+      gap: '20px',
     }
   };
 
@@ -104,7 +114,12 @@ const Navbar = () => {
   return (
     <nav style={styles.nav}>
       <Link to="/" style={styles.logoContainer} className="nav-logo">
-        <img src="/logo.png" alt="국립중앙박물관 로고" style={styles.logoImg} />
+        <img 
+          src={`${baseUrl}logo.png`} 
+          alt="로고 아이콘" 
+          style={styles.logoImg} 
+        />
+        <span style={styles.logoText}>{t('nav.logo')}</span>
       </Link>
       
       <div style={styles.rightSection} className="nav-right">
@@ -140,7 +155,10 @@ const Navbar = () => {
         }
         @media (max-width: 1200px) {
           .nav-menu {
-            gap: 1.2rem !important;
+            gap: 1rem !important;
+          }
+          .logo-text {
+            display: none; /* 화면이 좁아지면 텍스트는 숨기고 이미지만 표시 */
           }
         }
         @media (max-width: 1024px) {
