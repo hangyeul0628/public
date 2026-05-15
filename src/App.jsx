@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Home from './pages/Home';
 import Booking from './pages/Booking';
@@ -35,7 +35,7 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div style={styles.container}>
         <Navbar />
         <Routes>
@@ -48,7 +48,7 @@ function App() {
           <p>{t('footer.text')}</p>
         </footer>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
