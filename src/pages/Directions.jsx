@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { useTranslation } from 'react-i18next';
 
-
+import mapImg from '../assets/map.png';
 
 const Directions = () => {
 
@@ -241,10 +241,8 @@ const Directions = () => {
 
 
       <div style={styles.mapContainer}>
-
-        <img src="/map.png" alt={t('directions.mapAlt')} style={styles.mapImage} />
-
-      </div>
+  <img src={mapImg} alt={t('directions.mapAlt')} style={styles.mapImage} />
+</div>
 
 
 
