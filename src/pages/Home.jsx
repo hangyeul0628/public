@@ -6,6 +6,9 @@ import ExhibitionCard from '../components/ExhibitionCard';
 import FilterPanel from '../components/FilterPanel';
 import QuickInfoBar from '../components/QuickInfoBar';
 import NoticeSection from '../components/NoticeSection';
+import pensiveImg from '../assets/pensive.jpg';
+import celadonImg from '../assets/celadon.jpg';
+import digitalImg from '../assets/digital.jpg';
 
 const Home = () => {
   const { t } = useTranslation();
