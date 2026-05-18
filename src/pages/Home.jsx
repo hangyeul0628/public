@@ -21,7 +21,7 @@ const Home = () => {
     card: { background: 'white', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 4px 20px rgba(0,0,0,0.08)' },
     img: { width: '100%', height: '220px', objectFit: 'cover' },
     info: { padding: '20px' },
-    tag: { fontSize: '12px', color: '#888', marginBottom: '8px', display: 'block' }
+    tag: { fontSize: '12px', color: '#636363', marginBottom: '8px', display: 'block' } // #888 -> #636363 명비 개선
   };
 
   const exhibitions = [
@@ -33,23 +33,25 @@ const Home = () => {
   return (
     <>
       <header><HeroSearch /></header>
-      <QuickInfoBar />
-      <main id="exhibitions" style={styles.mainContent}>
-        <h2 style={styles.sectionTitle}>{t('exhibitions.sectionTitle')}</h2>
-        <div style={styles.grid}>
-          {exhibitions.map((ex, i) => (
-            <div key={i} style={styles.card}>
-              <img src={ex.img} alt={ex.title} style={styles.img} />
-              <div style={styles.info}>
-                <span style={styles.tag}>{ex.tag}</span>
-                <h3 style={{ marginBottom: '10px' }}>{ex.title}</h3>
-                <p style={{ color: '#666', fontSize: '14px' }}>{ex.desc}</p>
+      <main> {/* 전체 본문 콘텐츠 영역을 main 태그로 래핑하여 region 결함 완전 조치 */}
+        <QuickInfoBar />
+        <section id="exhibitions" style={styles.mainContent} aria-labelledby="exhibitions-title">
+          <h2 id="exhibitions-title" style={styles.sectionTitle}>{t('exhibitions.sectionTitle')}</h2>
+          <div style={styles.grid}>
+            {exhibitions.map((ex, i) => (
+              <div key={i} style={styles.card}>
+                <img src={ex.img} alt={ex.title} style={styles.img} />
+                <div style={styles.info}>
+                  <span style={styles.tag}>{ex.tag}</span>
+                  <h3 style={{ marginBottom: '10px', color: '#0f172a' }}>{ex.title}</h3> {/* 명시적으로 고대비 어두운 색 부여 */}
+                  <p style={{ color: '#555', fontSize: '14px' }}>{ex.desc}</p>
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        </section>
+        <NoticeSection />
       </main>
-      <NoticeSection />
     </>
   );
 };

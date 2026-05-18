@@ -56,8 +56,8 @@ const Dashboard = () => {
 
   return (
     <div style={styles.dashboard} role="status" aria-live="polite" aria-atomic="true">
-      <div style={styles.badge} aria-label={ariaStatus}>
-        <span aria-hidden="true">{badgeText}</span>
+      <div style={styles.badge}>
+        <span>{badgeText}</span>
       </div>
       <span style={styles.text}>
         {timeText} 

@@ -174,7 +174,6 @@ const HeroSearch = () => {
           aria-label={t('hero.searchAria')}
           aria-autocomplete="list"
           aria-controls="search-results-listbox"
-          aria-expanded={results.length > 0 && query.length > 1}
           placeholder={t('hero.searchPlaceholder')}
           style={styles.input}
           value={query}

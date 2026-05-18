@@ -87,9 +87,8 @@ const NoticeSection = () => {
       color: 'var(--color-text-title)',
     },
     itemDate: {
-      color: 'var(--color-text-body)',
+      color: '#cbd5e1', // 명비 4.5:1 이상 고대비 밝은 그레이 컬러로 변경 및 opacity 제거
       fontSize: 'max(0.75rem, 12px)',
-      opacity: 0.7,
     },
     banner: {
       borderRadius: 'var(--radius-lg)',
@@ -127,7 +126,7 @@ const NoticeSection = () => {
   };
 
   return (
-    <section style={styles.section}>
+    <section style={styles.section} aria-labelledby="notice-section-title">
       <div style={styles.header}>
         <svg
           width="32"
@@ -158,7 +157,7 @@ const NoticeSection = () => {
           <line x1="52" y1="20" x2="58" y2="20" stroke="var(--color-text-title)" strokeWidth="2.5" strokeLinecap="round"/>
           <line x1="50" y1="27" x2="55" y2="31" stroke="var(--color-text-title)" strokeWidth="2.5" strokeLinecap="round"/>
         </svg>
-        <h2 style={styles.title}>{t('notice.sectionTitle').replace('📢', '').trim()}</h2>
+        <h2 id="notice-section-title" style={styles.title}>{t('notice.sectionTitle').replace('📢', '').trim()}</h2>
       </div>
 
       <div style={styles.content} className="notice-content">
