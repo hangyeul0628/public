@@ -53,7 +53,7 @@ const LoadingScreen = ({ onComplete }) => {
         
         {/* 텍스트 타이포그래피 모션 */}
         <div className="brand-text-container">
-          <h1 className="brand-logo">V I B E</h1>
+          <h1 className="brand-logo">MUSEUM</h1>
           <p className="brand-sub">MUSEUM GUEST PORTAL</p>
         </div>
         

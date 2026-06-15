@@ -90,13 +90,14 @@
 
 .brand-logo {
   font-family: 'Playfair Display', serif;
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   font-weight: 700;
-  letter-spacing: 0.5em;
+  letter-spacing: 0.4em;
   color: var(--color-text-title, #E6F1FF);
   margin-bottom: 4px;
-  text-indent: 0.5em; /* 자간 균형 */
+  text-indent: 0.4em; /* 자간 균형 */
   text-shadow: 0 0 15px rgba(230, 241, 255, 0.2);
+  white-space: nowrap;
 }
 
 .brand-sub {
