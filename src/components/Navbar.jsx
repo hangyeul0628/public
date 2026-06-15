@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import LanguageSwitcher from './LanguageSwitcher';
 
-const Navbar = () => {
+const Navbar = ({ openOnboarding }) => {
   const { t } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
   const navigate = useNavigate();
@@ -146,12 +146,50 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
+        
+        {/* 온보딩 다시보기 가이드 버튼 */}
+        <button 
+          onClick={openOnboarding} 
+          className="guide-button" 
+          aria-label="Show User Guide"
+          title={t('onboarding.btnRestart')}
+        >
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+          </svg>
+        </button>
+
         <LanguageSwitcher />
       </div>
 
       <style>{`
         .nav-link:hover {
           color: var(--color-accent) !important;
+        }
+        .guide-button {
+          color: var(--color-text-title);
+          opacity: 0.85;
+          border-radius: 50%;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          width: 40px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: rgba(255, 255, 255, 0.03);
+          border: 1px solid rgba(255, 255, 255, 0.08);
+          padding: 0;
+          box-sizing: border-box;
+        }
+        .guide-button:hover {
+          color: var(--color-accent) !important;
+          background: rgba(255, 255, 255, 0.08);
+          border-color: var(--color-accent);
+          transform: scale(1.05);
+          box-shadow: 0 0 10px rgba(197, 160, 89, 0.25);
         }
         @media (max-width: 1200px) {
           .nav-menu {
