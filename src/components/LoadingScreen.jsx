@@ -24,12 +24,30 @@ const LoadingScreen = ({ onComplete }) => {
   return (
     <div className={`loading-container ${fadeOut ? 'fade-out' : ''}`} role="dialog" aria-modal="true" aria-label="Loading VIBE Portal">
       <div className="loading-content">
-        {/* 기하학적이고 고급스러운 골드 SVG 로딩 서클 */}
+        {/* 기하학적이고 고급스러운 골드 SVG 로딩 서클 및 파비콘 로고 */}
         <div className="svg-wrapper">
           <svg className="loading-svg" viewBox="0 0 100 100">
+            <defs>
+              <clipPath id="logo-circle-clip">
+                <circle cx="50" cy="50" r="28" />
+              </clipPath>
+            </defs>
             <circle className="bg-circle" cx="50" cy="50" r="45" />
             <circle className="accent-circle" cx="50" cy="50" r="45" />
-            <polygon className="inner-triangle" points="50,28 69,62 31,62" />
+            
+            {/* 로고 뒷배경 서클 (가시성 확보) */}
+            <circle className="inner-logo-bg" cx="50" cy="50" r="28" />
+            
+            {/* 파비콘 로고 이미지 */}
+            <image 
+              href={`${import.meta.env.BASE_URL}logo.png`} 
+              x="22" 
+              y="22" 
+              width="56" 
+              height="56" 
+              clipPath="url(#logo-circle-clip)"
+              className="inner-logo-img"
+            />
           </svg>
         </div>
         
