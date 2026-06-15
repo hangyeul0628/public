@@ -36,8 +36,6 @@ const OnboardingModal = ({ isOpen, onClose }) => {
   };
 
   const handleComplete = () => {
-    // 로컬 스토리지에 완료 여부 저장
-    localStorage.setItem('vibe_onboarding_completed', 'true');
     // 로딩 및 온보딩 닫은 후 페이지 꼭대기로 스크롤 보정
     window.scrollTo({ top: 0, behavior: 'instant' });
     onClose();

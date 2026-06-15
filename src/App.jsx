@@ -17,15 +17,13 @@ function App() {
     document.documentElement.lang = i18n.language;
   }, [i18n.language]);
 
-  // 로딩 화면이 끝났을 때 온보딩 모달 노출 여부 결정
+  // 로딩 화면이 끝났을 때 항상 온보딩 모달 노출
   const handleLoadingComplete = () => {
     setIsLoading(false);
     // 로딩 스플래시 종료 직후 화면 상단 스크롤 강제
     window.scrollTo({ top: 0, behavior: 'instant' });
-    const completed = localStorage.getItem('vibe_onboarding_completed');
-    if (!completed) {
-      setIsOnboardingOpen(true);
-    }
+    // 재로딩 시에도 항상 온보딩 모달 표시
+    setIsOnboardingOpen(true);
   };
 
   const styles = {
