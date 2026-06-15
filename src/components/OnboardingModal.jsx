@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import './OnboardingModal.css';
 
@@ -6,6 +6,18 @@ const OnboardingModal = ({ isOpen, onClose }) => {
   const { t } = useTranslation();
   const [currentSlide, setCurrentSlide] = useState(0);
   const totalSlides = 3;
+
+  // 온보딩 가이드 오픈 시 바디 스크롤락 설정
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isOpen]);
 
   if (!isOpen) return null;
 
@@ -26,6 +38,8 @@ const OnboardingModal = ({ isOpen, onClose }) => {
   const handleComplete = () => {
     // 로컬 스토리지에 완료 여부 저장
     localStorage.setItem('vibe_onboarding_completed', 'true');
+    // 로딩 및 온보딩 닫은 후 페이지 꼭대기로 스크롤 보정
+    window.scrollTo({ top: 0, behavior: 'instant' });
     onClose();
   };
 

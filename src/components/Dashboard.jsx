@@ -61,13 +61,21 @@ const Dashboard = () => {
       </div>
       <span style={styles.text}>
         {timeText} 
-        <span style={{opacity: 0.6, marginLeft: '12px', display: 'none'}} className="desktop-only" aria-hidden="true">
+        <span style={{opacity: 0.6, marginLeft: '12px'}} className="live-updates-text">
            {t('dashboard.liveUpdates')}
         </span>
       </span>
       <style>{`
-        @media (min-width: 768px) {
-          .desktop-only { display: inline !important; }
+        .live-updates-text {
+          display: inline;
+        }
+        @media (max-width: 768px) {
+          .live-updates-text {
+            display: block;
+            margin-left: 0 !important;
+            margin-top: 4px;
+            opacity: 0.75;
+          }
         }
       `}</style>
     </div>
